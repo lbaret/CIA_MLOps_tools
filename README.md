@@ -17,20 +17,23 @@ C'est un réel compagnon qui vous permettra d'accélérer la mise en place de vo
 
 ### Pyenv + Poetry
 
-Ces deux outils vont de pairs et vous seront redoutablement utiles pour le développement
+Ces deux outils vont de pairs et vous seront redoutablement utiles pour le développement. \
+Du côté pyenv, l'outil vous offre la possibilité de gérer plusieurs versions python d'un coup. Autrement dit, vous pouvez installez plusieurs versions python sur votre machine. \
+Quant à poetry, l'outil vous permet de gérer des environnements python. Il gère les conflits de dépendances, les versions et construit un environnement reproductible via un fichier nommé `poetry.lock`. Si vous mettez les fichiers `pyproject.toml` et `poetry.lock` dans votre dépôt *github*, tout le monde peut installer le même environnement, sans avoir de problème de version de package python.
 
 [Pour en savoir plus sur pyenv](https://github.com/pyenv/pyenv) \
 [Pour en savoir plus sur poetry](https://python-poetry.org/)
 
 ### Hydra
 
-À compléter
+Hydra est le compagnon typique pour le scientifique/chercheur. Il permet de gérer les configurations tout en permettant de lancer les exécutions d'un programme Python. \
+Les configurations sont basées sur une arborescence de fichiers au format *yaml*.
 
 [Pour en savoir plus sur hydra](https://hydra.cc/)
 
 ### MLflow
 
-À compléter
+Outil phare pour la gestion des expérimentations en apprentissage automatique. Grâve à une application web en local (ou déployé sur un serveur), vous aurez accès à tous vos entrainements de modèles, les méta-données et les métriques que vous avez choisi de *tracker*. De plus, il est simple de récupérer les poids du modèle que vous voulez ré-utiliser par la suite, tout en vous fiant aux informations que vous avez collecté.
 
 [Pour en savoir plus sur MLflow](https://mlflow.org/)
 
@@ -83,3 +86,9 @@ En effet, c'est un *framework* fort utile qui va vous permettre de lancer et de 
 À compléter
 
 [Pour en savoir plus sur pylint](https://pylint.readthedocs.io/en/latest/user_guide/installation/index.html)
+
+### click
+
+À compléter
+
+[Pour en savoir plus sur click](https://click.palletsprojects.com/en/8.1.x/)
