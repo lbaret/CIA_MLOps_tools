@@ -39,19 +39,23 @@ Outil phare pour la gestion des expérimentations en apprentissage automatique. 
 
 ### Pytorch-Lightning
 
-À compléter 
+Pytorch Lightning est un framework qui va encapsuler vos modèles dans des LightningModule, vous offrant un composant de base pour pouvoir entrainer optimalement vos modèles, comme on pourrait le faire via un simple appel à la méthode `fit()` comme pour `scikit-learn` et `tensorflow`.
+
+Le framework est très permissif et vous permet de gérer tous les comportements de votre boucle d'entrainement, sans que vous aillez à l'implémenter entièrement. De plus, il vous permet de logger vos métriques durant les exécutions, que ce soit en entrainement, en validation ou en test. Il enregistre vos poids selon vos directives (seulement garder la meilleure itération en validation ou bien conserver uniquement le modèle en dernière époque, etc...). Les données enregistrées sont facilements accessibles avec le `Tensorboard` offert par `tensorflow`. Vous pouvez également très simplement coupler `MLflow` et `Pytorch-Lightning` afin de faire un suivi optimal de vos expérimentations.
 
 [Pour en savoir plus sur pytorch-lightning](https://lightning.ai/docs/pytorch/stable/)
 
 ### Tensorboard
 
-À compléter
+Le `tensorboard` est un excellent outil si vous avez besoin de visualiser rapmidement et efficaceent vos données, que ce soit des embeddings, des images, des simples graphiques, des histogrammes, etc... Pour la visualisation, `tensorboard` vous offre des options afin de lisser vos graphes ou simplement de les peaufiner.
 
 [Pour en savoir plus sur les tensorboards](https://www.tensorflow.org/tensorboard?hl=fr)
 
 ### Data Version Control
 
-À compléter
+On parle souvent de la gestion des versions d'un code. Or, dans le cas du MLOps, il peut être également essentiel de devoir sauvegarder les divers versions de vos données. Git pourrait être une option, mais ce ne serait pas l'idéal car un dépôt est limité en taille et enregistre toutes les données de façon binaire.
+
+Imaginez vous réalisez plusieurs expérimentations durant votre projet, mais qu'au fil du temps vous retravaillez votre traitement de données afin de créer de nouveaux modèles. Il vous faudra sûrement garder en mémoire les versions ultérieures de votre jeu de données afin de pouvoir efficacement récupérer et refaire tourner de nouvelles expérimentations afin de procéder à des comparaisons. Cela peut vous sauver la mise lors de vos travaux de recherche.
 
 [Pour en savoir plus sur DVC](https://dvc.org/)
 
@@ -59,7 +63,12 @@ Outil phare pour la gestion des expérimentations en apprentissage automatique. 
 
 ### WSL 2.0
 
-À compléter
+Pour de quelconques raisons, vous pourriez avoir envie de passer sous Linux, mais vous ne voulez ou ne pouvez pas vous défaire de Windows, notamment pour le *gaming* ou car votre projet/entreprise vous contraint à son utilisation. Vous seriez tenter d'installer une machine virtuelle et d'y coller Linux dedans ou de simplement configurer un *dual boot*. Or si je vous parle de Windows Subsystem for Linux vous pourriez avoir la l'une des meilleures alternatives selon votre besoin !
+
+WSL est un sous-système qui va être intégré à votre environement Windows, ainsi Windows va partager les ressources efficacement pour pouvoir faire rouler votre Linux. Vous pouvez alors jouer dans Linux comme si l'aviez réellement installé sur votre machine, sans avoir la contrainte de lancer une machine virtuelle ou de redémarrer votre ordinateur pour pouvoir y accéder.
+
+Ainsi, à l'aide d'un IDE tel que VS Code ou PyCharm, vous serez en mesure de développer comme si vous étiez sur Windows mais en travaillant dans votre sous-système ! Je le conseille vivement dans le cas où les outils comme `pyenv` et `poetry` sont conçus pour fonctionner nativement sur Linux.
+
 [Pour en savoir plus sur WSL](https://learn.microsoft.com/en-us/windows/wsl/)
 
 ### Kubernetes
