@@ -74,7 +74,7 @@ Ainsi, à l'aide d'un IDE tel que VS Code ou PyCharm, vous serez en mesure de d�
 ### Kubernetes
 
 Je ne le présenterai pas en démo car c'est un outil très spécifique dont je n'ai pas cherché à réellement comprendre les mécanismes. Retenez qu'il vous sera (sûrement) indispensable lorsque vous travaillerez dans une entreprise. \
-En effet, c'est un *framework* fort utile qui va vous permettre de lancer et de surveiller des exécutions de programmes sur un serveur distant. Son avantage est de découper et d'organiser les ressources afin de lancer vos programmes, qui plus est, les exécutions doivent être encapsulés dans un containeur docker.
+En effet, c'est un *framework* fort utile qui va vous permettre de lancer et de surveiller des exécutions de programmes sur un serveur distant. Son avantage est de découper et d'organiser les ressources afin de lancer vos programmes, qui plus est, les exécutions doivent être encapsulées dans un containeur docker.
 
 [Pour en savoir plus sur Kubernetes](https://kubernetes.io/)
 
