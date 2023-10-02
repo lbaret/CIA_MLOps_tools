@@ -78,10 +78,13 @@ En effet, c'est un *framework* fort utile qui va vous permettre de lancer et de 
 
 [Pour en savoir plus sur Kubernetes](https://kubernetes.io/)
 
-### .devcontainer avec Visual Studio Code
+### Docker et les .devcontainer avec Visual Studio Code
 
-À compléter
+Les *containers* de Docker sont un indispensable du développement ! C'est un outil avec lequel il est préférable de se familiariser. Que vous voulez travailler dans la recherche ou dans l'ingénierie, il vous donne la chance d'avoir un environnement reproductible à 100% car il construit à l'aide d'une image un environnement de développement que vous pouvez contrôler. L'image en question peut être n'importe quel système d'exploitation (Windows, Ubuntu, Debian, Kali, etc...), dont des versions allégées pour n'installer que ce dont vous avez besoin !
 
+Le `devcontainer` proposé par VS Code vous permet de développer depuis votre IDE (VS Code oblige) dans un container, ainsi, fini les problèmes de packages ou de versions non compatibles ! Couplez cela avec `pyenv` et `poetry` et vous êtes équipé(e)s pour développer et livrer votre code sans vous inquiéter !
+
+[Pour en savoir plus sur Docker](https://www.docker.com/)
 [Pour en savoir plus sur le développement sous .devcontainer](https://code.visualstudio.com/docs/devcontainers/containers)
 
 ### black
