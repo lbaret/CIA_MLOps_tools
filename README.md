@@ -89,18 +89,18 @@ Le `devcontainer` proposé par VS Code vous permet de développer depuis votre I
 
 ### black
 
-À compléter
+Outil développé en Python pour pouvoir vérifier le formatage mais également formater automatiquement le code.
 
 [Pour en savoir plus sur Black](https://black.readthedocs.io/en/stable/)
 
 ### pylint
 
-À compléter
+Pylint est un analyseur de code, comme `Black` c'est un outil qui peut vous faire gagner du temps, car sans avoir besoin d'exécuter le code il peut rapidement évaluer le flux dans votre code et cibler des erreurs avant que vous ne l'exécutiez.
 
 [Pour en savoir plus sur pylint](https://pylint.readthedocs.io/en/latest/user_guide/installation/index.html)
 
 ### click
 
-À compléter
+Click est une alternative plus évoluée et plus simple d'usage que `argparse` pour gérer les exécutions de programme Python. Mais dans notre cas, nous nous focaliserons sur `hydra` qui est spécifiquement adapté aux usages du scientifique et du chercheur en apprentissage automatique.
 
 [Pour en savoir plus sur click](https://click.palletsprojects.com/en/8.1.x/)
