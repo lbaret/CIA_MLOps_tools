@@ -104,3 +104,7 @@ Pylint est un analyseur de code, comme `Black` c'est un outil qui peut vous fair
 Click est une alternative plus évoluée et plus simple d'usage que `argparse` pour gérer les exécutions de programme Python. Mais dans notre cas, nous nous focaliserons sur `hydra` qui est spécifiquement adapté aux usages du scientifique et du chercheur en apprentissage automatique.
 
 [Pour en savoir plus sur click](https://click.palletsprojects.com/en/8.1.x/)
+
+### Docstring et Sphinx
+
+TODO : À compléter.
