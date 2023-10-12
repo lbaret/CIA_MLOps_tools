@@ -1,0 +1,13 @@
+defaults:
+  - base_config
+  - membre: loic
+  - projet: manga
+  - _self_
+
+experience:
+  nom_modele: "manga_translator"
+  poids: "./checkpoints/model_weights.pt"
+  epoques: 50
+  taux_apprentissage: 0.1
+  optimiseur: "Adam"
+  perte: "CrossEntropy"

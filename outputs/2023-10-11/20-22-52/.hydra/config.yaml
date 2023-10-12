@@ -1,0 +1,14 @@
+experience:
+  nom_modele: manga_translator
+  poids: ./checkpoints/model_weights.pt
+  epoques: 50
+  taux_apprentissage: 0.1
+  optimiseur: Adam
+  perte: CrossEntropy
+membre:
+  prenom: Loïc
+  nom: Baret
+  id: 1
+projet:
+  nom: Traduction manga
+  git: https://github.com/cia-ulaval/MangaAutoTranslator
