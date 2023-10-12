@@ -1,0 +1,7 @@
+{
+    "nom_projet": "Exemple tres simple",
+    "projet_slug": "{{ cookiecutter.nom_projet.lower().replace(' ', '_') }}",
+    "auteur": "CIA Ulaval",
+    "prefere": ["chat", "chien", "justin bieber", "aucun"],
+    "bayesien_ou_frequentiste": ["bayesien", "frequentiste", "autre"]
+  }
