@@ -1,5 +1,5 @@
 defaults:
-  - base_config
+  # - base_config
   - membre: loic
   - projet: manga
   - _self_

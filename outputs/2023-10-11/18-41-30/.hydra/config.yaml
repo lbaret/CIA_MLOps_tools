@@ -1,9 +1,0 @@
-membre: loic
-projet: manga
-experience:
-  nom_modele: manga_translator
-  poids: ./checkpoints/model_weights.pt
-  epoques: 10
-  taux_apprentissage: 0.1
-  optimiseur: Adam
-  perte: CrossEntropy
