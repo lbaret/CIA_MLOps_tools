@@ -59,6 +59,11 @@ Imaginez vous réalisez plusieurs expérimentations durant votre projet, mais qu
 
 [Pour en savoir plus sur DVC](https://dvc.org/)
 
+### Docstring et Sphinx
+
+Pour commencer, docstring est une façon de documenter ses fonctions/méthodes directement dans le code entre les triples chevrons """docstring""". Cela permet aux développeurs d'indiquer quels sont les informations à savoir sur les arguments (type, valeurs, exemples, etc...), et les valeurs en sortie. Coupler docstring avec la librairie sphinx permet de générer automatiquement et rapidement une documentation en format HTML sans trop se casser la tête. Ces pages HTML peuvent ensuite être publiés en ligne simplement (exemple en lien github.io).
+[Pour en savoir plus sur sphinx](https://www.sphinx-doc.org/en/master/index.html)
+
 ## Les bonus
 
 ### WSL 2.0
@@ -104,7 +109,3 @@ Pylint est un analyseur de code, comme `Black` c'est un outil qui peut vous fair
 Click est une alternative plus évoluée et plus simple d'usage que `argparse` pour gérer les exécutions de programme Python. Mais dans notre cas, nous nous focaliserons sur `hydra` qui est spécifiquement adapté aux usages du scientifique et du chercheur en apprentissage automatique.
 
 [Pour en savoir plus sur click](https://click.palletsprojects.com/en/8.1.x/)
-
-### Docstring et Sphinx
-
-TODO : À compléter.
