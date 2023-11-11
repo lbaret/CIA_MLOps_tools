@@ -109,3 +109,15 @@ Pylint est un analyseur de code, comme `Black` c'est un outil qui peut vous fair
 Click est une alternative plus évoluée et plus simple d'usage que `argparse` pour gérer les exécutions de programme Python. Mais dans notre cas, nous nous focaliserons sur `hydra` qui est spécifiquement adapté aux usages du scientifique et du chercheur en apprentissage automatique.
 
 [Pour en savoir plus sur click](https://click.palletsprojects.com/en/8.1.x/)
+
+### Ruff
+
+Ruff est un outil optimisé pour le linting et le code formatting, c'est un tout-en-un. Cela vous évite d'utiliser plusieurs outils différents comme pylint, flake8 ou autoflake pour le linting et Black ou mypy pour le formatting de code.
+
+[Pour en savoir plus sur ruff](https://docs.astral.sh/ruff/)
+
+### Security
+
+Chercher le package pour trouver les CVEs (ou vulnérabilités), autrement dit les problèmes de sécurité que peuvent induire l'utilisation des packages mis en cause. Très pratique lorsque vous travaillez en mode CI/CD.
+
+[Pour en savoir plus sur safety](https://github.com/pyupio/safety)
