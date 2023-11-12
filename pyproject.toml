@@ -22,6 +22,18 @@ ruff = "^0.1.5"
 [tool.poe.tasks]
 torch-cuda = "pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118"
 
+[tool.ruff.lint]
+extend-select = [
+  "UP",
+  "D",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff]
+line-length = 90
+
 
 [build-system]
 requires = ["poetry-core"]
