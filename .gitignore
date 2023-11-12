@@ -8,6 +8,9 @@ MNIST/
 # Oh ça c'était pour faire l'image DvC = Git
 .drawio
 
+# ruff cache
+.ruff_cache
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
