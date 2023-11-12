@@ -94,11 +94,15 @@ Le `devcontainer` proposé par VS Code vous permet de développer depuis votre I
 
 ### black
 
+[Deprecated -> ruff](#ruff)
+
 Outil développé en Python pour pouvoir vérifier le formatage mais également formater automatiquement le code.
 
 [Pour en savoir plus sur Black](https://black.readthedocs.io/en/stable/)
 
 ### pylint
+
+[Deprecated -> ruff](#ruff)
 
 Pylint est un analyseur de code, comme `Black` c'est un outil qui peut vous faire gagner du temps, car sans avoir besoin d'exécuter le code il peut rapidement évaluer le flux dans votre code et cibler des erreurs avant que vous ne l'exécutiez.
 
