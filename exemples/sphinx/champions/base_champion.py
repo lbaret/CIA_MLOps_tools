@@ -1,3 +1,8 @@
+from typing import Iterable
+
+from ..spells.base_spell import BaseSpell
+
+
 class BaseChampion:  # noqa: D100
     """Classe parente des champions."""
 
@@ -9,6 +14,7 @@ class BaseChampion:  # noqa: D100
         base_ap: int,
         armor: int,
         magic_resist: int,
+        spells: Iterable[BaseSpell]
     ) -> None:
         """Instanciation de la classe parente des divers champions.
         On s'attend à recevoir les caractéristiques de bases de chacun,
@@ -26,6 +32,8 @@ class BaseChampion:  # noqa: D100
         :type armor: int
         :param magic_resist: Resistance aux dégâts magiques de base du champion
         :type magic_resist: int
+        :param spells: Les sorts du champion en question
+        :type spells: Iterable[BaseSpell]
         """  # noqa: D205
         self.health = health
         self.mana = mana
@@ -33,6 +41,7 @@ class BaseChampion:  # noqa: D100
         self.base_ap = base_ap
         self.armor = armor
         self.magic_resist = magic_resist
+        self.spells = spells
 
         self._stunned = False
         self._bumped = False
