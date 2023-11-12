@@ -120,7 +120,7 @@ Ruff est un outil optimisé pour le linting et le code formatting, c'est un tout
 
 [Pour en savoir plus sur ruff](https://docs.astral.sh/ruff/)
 
-### Security
+### safety
 
 Chercher le package pour trouver les CVEs (ou vulnérabilités), autrement dit les problèmes de sécurité que peuvent induire l'utilisation des packages mis en cause. Très pratique lorsque vous travaillez en mode CI/CD.
 
