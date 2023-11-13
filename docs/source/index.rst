@@ -18,3 +18,12 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+Structure
+=========
+
+.. toctree::
+   pages/champions.rst
+   pages/spells.rst
+   pages/structures.rst
+   pages/utilities.rst

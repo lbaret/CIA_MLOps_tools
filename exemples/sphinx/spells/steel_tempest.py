@@ -1,6 +1,5 @@
-from typing import List
+from typing import Any, List
 
-from ..champions.base_champion import BaseChampion
 from .base_spell import BaseSpell
 
 
@@ -28,14 +27,14 @@ class SteelTempest(BaseSpell):
         :type blind: bool
         :param bump: indique si le sort propulse un champion dans les airs
         :type bump: bool
-        """        
+        """
         super().__init__(damages, damage_type, stun=stun, blind=blind, bump=bump)
 
-    def apply(self, champions: List[BaseChampion]) -> None:
+    def apply(self, hitted: List[Any]) -> None:
         """Applique les effets du sort tempête d'acier aux champions atteints par le sort.
 
-        :param champion: listes d'instances de champions atteints par le sort
-        :type champion: List[BaseChampion]
+        :param champion: listes d'instances d'objets atteints par le sort
+        :type champion: List[Any]
         :raises NotImplementedError: Méthode abstraite qui doit être implémentée par une classe enfant
         """
         pass

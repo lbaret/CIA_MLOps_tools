@@ -1,9 +1,9 @@
 from typing import List
 
 from .champions.base_champion import BaseChampion
-from .structure.inhibitor import Inhibitor
-from .structure.nexus import Nexus
-from .structure.tower import Tower
+from .structures.inhibitor import Inhibitor
+from .structures.nexus import Nexus
+from .structures.tower import Tower
 
 
 def load_map(

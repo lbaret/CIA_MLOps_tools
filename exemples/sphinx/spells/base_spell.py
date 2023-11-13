@@ -1,7 +1,5 @@
 from abc import abstractmethod
-from typing import List
-
-from ..champions.base_champion import BaseChampion
+from typing import Any, List
 
 
 class BaseSpell:
@@ -35,37 +33,37 @@ class BaseSpell:
         self.blind = blind
         self.bump = bump
 
-    def __call__(self, champions: List[BaseChampion]) -> None:
+    def __call__(self, hitted: List[Any]) -> None:
         """Voir la méthode apply().
 
-        :param champion: listes d'instances de champions atteints par le sort
-        :type champion: List[BaseChampion]
+        :param champion: listes d'instances d'objets atteints par le sort
+        :type champion: List[Any]
         """
-        self.apply(champions)
+        self.apply(hitted)
 
     @abstractmethod
-    def apply(self, champions: List[BaseChampion]) -> None:
-        """Applique les effets aux champions atteints par le sort.
+    def apply(self, hitted: List[Any]) -> None:
+        """Applique les effets aux objets atteints par le sort.
 
-        :param champion: listes d'instances de champions atteints par le sort
-        :type champion: List[BaseChampion]
+        :param champion: listes d'instances d'objets atteints par le sort
+        :type champion: List[Any]
         :raises NotImplementedError: Méthode abstraite qui doit être implémentée par une classe enfant
         """
         raise NotImplementedError("This method must be implemented by a child class")
 
-    def apply_damages(self, champions: List[BaseChampion]) -> None:
-        """Applique les dégâts aux champions atteints par le sort.
+    def apply_damages(self, hitted: List[Any]) -> None:
+        """Applique les dégâts aux objets atteints par le sort.
 
-        :param champion: listes d'instances de champions atteints par le sort
-        :type champion: List[BaseChampion]
+        :param champion: listes d'instances d'objets atteints par le sort
+        :type champion: List[Any]
         :raises NotImplementedError: Méthode abstraite qui doit être implémentée par une classe enfant
         """
         raise NotImplementedError("This method must be implemented by a child class")
 
-    def apply_state(self, champions: List[BaseChampion]) -> None:
-        """Applique les effets de contrôle aux champions atteints par le sort.
+    def apply_state(self, hitted: List[Any]) -> None:
+        """Applique les effets de contrôle aux objets atteints par le sort.
 
-        :param champion: listes d'instances de champions atteints par le sort
+        :param champion: listes d'instances d'objets atteints par le sort
         :type champion: List[BaseChampion]
         :raises NotImplementedError: Méthode abstraite qui doit être implémentée par une classe enfant
         """
