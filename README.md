@@ -51,18 +51,22 @@ Le `tensorboard` est un excellent outil si vous avez besoin de visualiser rapmid
 
 [Pour en savoir plus sur les tensorboards](https://www.tensorflow.org/tensorboard?hl=fr)
 
-### Data Version Control
-
-On parle souvent de la gestion des versions d'un code. Or, dans le cas du MLOps, il peut être également essentiel de devoir sauvegarder les divers versions de vos données. Git pourrait être une option, mais ce ne serait pas l'idéal car un dépôt est limité en taille et enregistre toutes les données de façon binaire.
-
-Imaginez vous réalisez plusieurs expérimentations durant votre projet, mais qu'au fil du temps vous retravaillez votre traitement de données afin de créer de nouveaux modèles. Il vous faudra sûrement garder en mémoire les versions ultérieures de votre jeu de données afin de pouvoir efficacement récupérer et refaire tourner de nouvelles expérimentations afin de procéder à des comparaisons. Cela peut vous sauver la mise lors de vos travaux de recherche.
-
-[Pour en savoir plus sur DVC](https://dvc.org/)
-
 ### Docstring et Sphinx
 
 Pour commencer, docstring est une façon de documenter ses fonctions/méthodes directement dans le code entre les triples chevrons """docstring""". Cela permet aux développeurs d'indiquer quels sont les informations à savoir sur les arguments (type, valeurs, exemples, etc...), et les valeurs en sortie. Coupler docstring avec la librairie sphinx permet de générer automatiquement et rapidement une documentation en format HTML sans trop se casser la tête. Ces pages HTML peuvent ensuite être publiés en ligne simplement (exemple en lien github.io).
 [Pour en savoir plus sur sphinx](https://www.sphinx-doc.org/en/master/index.html)
+
+### Ruff
+
+Ruff est un outil optimisé pour le linting et le code formatting, c'est un tout-en-un. Cela vous évite d'utiliser plusieurs outils différents comme pylint, flake8 ou autoflake pour le linting et Black ou mypy pour le formatting de code.
+
+[Pour en savoir plus sur ruff](https://docs.astral.sh/ruff/)
+
+### safety
+
+Chercher le package pour trouver les CVEs (ou vulnérabilités), autrement dit les problèmes de sécurité que peuvent induire l'utilisation des packages mis en cause. Très pratique lorsque vous travaillez en mode CI/CD.
+
+[Pour en savoir plus sur safety](https://github.com/pyupio/safety)
 
 ## Les bonus
 
@@ -92,6 +96,14 @@ Le `devcontainer` proposé par VS Code vous permet de développer depuis votre I
 [Pour en savoir plus sur Docker](https://www.docker.com/)
 [Pour en savoir plus sur le développement sous .devcontainer](https://code.visualstudio.com/docs/devcontainers/containers)
 
+### Data Version Control
+
+On parle souvent de la gestion des versions d'un code. Or, dans le cas du MLOps, il peut être également essentiel de devoir sauvegarder les divers versions de vos données. Git pourrait être une option, mais ce ne serait pas l'idéal car un dépôt est limité en taille et enregistre toutes les données de façon binaire.
+
+Imaginez vous réalisez plusieurs expérimentations durant votre projet, mais qu'au fil du temps vous retravaillez votre traitement de données afin de créer de nouveaux modèles. Il vous faudra sûrement garder en mémoire les versions ultérieures de votre jeu de données afin de pouvoir efficacement récupérer et refaire tourner de nouvelles expérimentations afin de procéder à des comparaisons. Cela peut vous sauver la mise lors de vos travaux de recherche.
+
+[Pour en savoir plus sur DVC](https://dvc.org/)
+
 ### black
 
 [Deprecated -> ruff](#ruff)
@@ -113,15 +125,3 @@ Pylint est un analyseur de code, comme `Black` c'est un outil qui peut vous fair
 Click est une alternative plus évoluée et plus simple d'usage que `argparse` pour gérer les exécutions de programme Python. Mais dans notre cas, nous nous focaliserons sur `hydra` qui est spécifiquement adapté aux usages du scientifique et du chercheur en apprentissage automatique.
 
 [Pour en savoir plus sur click](https://click.palletsprojects.com/en/8.1.x/)
-
-### Ruff
-
-Ruff est un outil optimisé pour le linting et le code formatting, c'est un tout-en-un. Cela vous évite d'utiliser plusieurs outils différents comme pylint, flake8 ou autoflake pour le linting et Black ou mypy pour le formatting de code.
-
-[Pour en savoir plus sur ruff](https://docs.astral.sh/ruff/)
-
-### safety
-
-Chercher le package pour trouver les CVEs (ou vulnérabilités), autrement dit les problèmes de sécurité que peuvent induire l'utilisation des packages mis en cause. Très pratique lorsque vous travaillez en mode CI/CD.
-
-[Pour en savoir plus sur safety](https://github.com/pyupio/safety)
