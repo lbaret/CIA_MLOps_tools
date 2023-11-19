@@ -4,7 +4,11 @@ Vous retrouverez dans ce tutoriel la présentation des principaux **outils** pou
 
 ## Installer le projet et faire rouler le code
 
-Insérer ici les directives.
+Après avoir installé *poetry*, exécutez simplement cette ligne de commande :
+
+```bash
+poetry install
+```
 
 ## Les outils
 

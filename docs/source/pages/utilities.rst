@@ -5,3 +5,4 @@ Fonctions utiles
 
 .. autofunction:: load_map
 .. autofunction:: load_champions
+.. autofunction:: function_test

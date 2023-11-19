@@ -5,6 +5,17 @@ from .structures.inhibitor import Inhibitor
 from .structures.nexus import Nexus
 from .structures.tower import Tower
 
+def function_test(
+    towers: List[Tower]
+) -> float:
+    """Test de la fonction
+
+    :param towers: _description_
+    :type towers: List[Tower]
+    :return: _description_
+    :rtype: float
+    """
+
 
 def load_map(
     towers: List[Tower], inhibitors: List[Inhibitor], nexus: List[Nexus]

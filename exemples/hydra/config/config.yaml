@@ -1,6 +1,6 @@
 defaults:
-  # - base_config
-  - membre: loic
+  - base_config
+  - membre: theo
   - projet: manga
   - _self_
 
